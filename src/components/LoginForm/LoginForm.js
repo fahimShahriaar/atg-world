@@ -26,7 +26,7 @@ const LoginForm = () => {
                     <img src={viewIcon} alt="" height="10px" />
                 </div>
             </div>
-            <div className="d-md-block">
+            <div className="d-md-none">
                 <div className="d-flex justify-content-between align-items-center">
                     <button data-bs-dismiss="modal" onClick={handleSignIn} className="w-50 rounded-pill bg-primary border-0 text-white my-3 py-2 fw-bold"><small>Sign In</small></button>
                     <small>Or, Create Account?</small>
