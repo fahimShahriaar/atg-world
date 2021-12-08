@@ -26,7 +26,15 @@ const LoginForm = () => {
                     <img src={viewIcon} alt="" height="10px" />
                 </div>
             </div>
-            <button data-bs-dismiss="modal" onClick={handleSignIn} className="w-100 rounded-pill bg-primary border-0 text-white my-3 py-2 fw-bold"><small>Sign In</small></button>
+            <div className="d-md-block">
+                <div className="d-flex justify-content-between align-items-center">
+                    <button data-bs-dismiss="modal" onClick={handleSignIn} className="w-50 rounded-pill bg-primary border-0 text-white my-3 py-2 fw-bold"><small>Sign In</small></button>
+                    <small>Or, Create Account?</small>
+                </div>
+            </div>
+            <div className="d-none d-md-block">
+                <button data-bs-dismiss="modal" onClick={handleSignIn} className="w-100 rounded-pill bg-primary border-0 text-white my-3 py-2 fw-bold"><small>Sign In</small></button>
+            </div>
             <button className="w-100 border my-1 bg-transparent py-2"><img src={fb} alt="" /> <small className="ms-2">Signin with facebook</small></button>
             <button className="w-100 border my-1 bg-transparent py-2"><img src={google} alt="" /> <small className="ms-2">Signin with Google</small></button>
             <small className="d-block my-5 text-center"><a href="/">Forgot Password?</a></small>
