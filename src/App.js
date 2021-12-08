@@ -6,8 +6,12 @@ export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={{
+      loginState: [loggedInUser, setLoggedInUser],
+      registerState: [isRegister, setIsRegister]
+    }}>
       <Home />
     </UserContext.Provider>
   );

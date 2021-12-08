@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../../App';
 import downArrow from '../../images/down-arrow.png'
 import joinGroup from '../../images/joinGroup.png'
+import leave from '../../images/leave.png'
 import './AllPostHeading.css'
 
 const AllPostHeading = () => {
+    const { loginState } = useContext(UserContext);
+    const [loggedInUser] = loginState;
     return (
         <div>
             <header >
@@ -33,10 +37,17 @@ const AllPostHeading = () => {
                                     <small>Write a post</small>
                                     <img className="ms-3" src={downArrow} alt="" width="8px" />
                                 </div>
-                                <div className="p-2 ms-3 btn btn-primary">
-                                    <img className="me-2" src={joinGroup} alt="" width="" />
-                                    <small>Join Group</small>
-                                </div>
+                                {
+                                    loggedInUser ? <div className="p-2 ms-3 btn border border-2">
+                                        <img className="me-2" src={leave} alt="" width="" />
+                                        <small>Leave Group</small>
+                                    </div> :
+                                        <div className="p-2 ms-3 btn btn-primary">
+                                            <img className="me-2" src={joinGroup} alt="" width="" />
+                                            <small>Join Group</small>
+                                        </div>
+                                }
+
                             </div>
                         </div>
                     </div>

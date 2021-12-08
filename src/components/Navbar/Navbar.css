@@ -1,10 +1,10 @@
-.search-input:focus{
+.search-input:focus, .formInput:focus{
     outline: none;
 }
 .search-input{
     background-color: transparent;
     font-size: small;
 }
-.search-input::placeholder{
+.search-input::placeholder, .formInput::placeholder{
     font-size: small;
 }
