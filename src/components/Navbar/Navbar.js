@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import logo from '../../images/logo.png'
 import search from '../../images/search.png'
 import downArrow from '../../images/down-arrow.png'
 import navRect from '../../images/navRect.png'
@@ -27,11 +26,11 @@ const Navbar = () => {
             <nav className="d-none d-md-block fixed-top bg-light">
                 <div className="d-flex justify-content-between border-b align-items-center px-5 py-2 border">
                     <div>
-                        <img src={logo} alt="" />
+                        <h4 className="my-0"><span className="text-success">Social</span> World</h4>
                     </div>
                     <div className="border w-25 d-flex align-items-center rounded-pill px-4 py-2" style={searchBg}>
                         <img src={search} alt="" />
-                        <input type="search" className="ms-2 w-100 px-2 border-0 outline-0 search-input" placeholder="Search for your favorite groups in ATG" />
+                        <input type="search" className="ms-2 w-100 px-2 border-0 outline-0 search-input" placeholder="Search for your favorite groups in Social World" />
                     </div>
                     <div>
                         <button type="button" className="border-0 bg-white fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">

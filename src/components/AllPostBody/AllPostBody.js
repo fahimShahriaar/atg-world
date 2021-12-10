@@ -23,7 +23,7 @@ const AllPostBody = () => {
             title: "What if famous brands had regular fonts? Meet RegulaBrands!",
             description: "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
             userDP: `${sarthakKamra}`,
-            userName: "Sarthak Kamra",
+            userName: "Rabin Hoodson",
             postView: "1.14K"
         },
         {
@@ -33,7 +33,7 @@ const AllPostBody = () => {
             title: "Tax Benefits for Investment under National Pension Scheme launched by Government",
             description: "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
             userDP: `${sarahWest}`,
-            userName: "Sarthak Kamra",
+            userName: "Jacky Chan",
             postView: "4.8K"
         },
     ]
@@ -49,7 +49,7 @@ const AllPostBody = () => {
             locationIcon: `${location}`,
             buttonText: "Visit Website",
             userDP: `${ronalJones}`,
-            userName: "Ronal Jones",
+            userName: "Fahim Shahriar",
             views: "800 views"
         },
         {
@@ -58,7 +58,7 @@ const AllPostBody = () => {
             title: "Software Developer - II",
             info: 'Innovaccer Analytic...',
             infoIcon: `${folderIcon}`,
-            location: `Nodia, India`,
+            location: `Dhaka, Bangladesh`,
             locationIcon: `${location}`,
             buttonText: "Apply on Timesjobs",
             userDP: `${josephGray}`,

@@ -20,7 +20,7 @@ const AllPostBodySidebar = () => {
             <div className="w-75 mx-auto">
                 <div className="border-2 border-bottom p-2 d-flex align-items-center">
                     <img src={locationIcon} alt="" height="18px" />
-                    <input type="text" className="flex-grow-1 border-0 ps-2 locationInput" placeholder="Nodia, India" />
+                    <input type="text" className="flex-grow-1 border-0 ps-2 locationInput" placeholder="Dhaka, Bangladesh" />
                     <img src={editIcon} className="text-end" alt="" height="15px" />
                 </div>
                 <div className="my-4">
